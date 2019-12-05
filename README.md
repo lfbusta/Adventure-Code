@@ -33,8 +33,6 @@ or use the setting `editor.tokenColorCustomizations`
 }
 ```
 
-[more info](https://binaryify.github.io/OneDark-Pro)
-
 Please check the official documentation,
 [Theme Color Reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference) and
 [Theme Color](https://code.visualstudio.com/docs/getstarted/themes), for more helpful information.
@@ -44,19 +42,3 @@ Please check the official documentation,
 ![custom](https://camo.githubusercontent.com/179963baf6ded2934ec5dba08a65f61ca8d0b34f/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744e6252776779316676776a70776e7137626a33307175313477337a722e6a7067)
 
 [More info](https://code.visualstudio.com/updates/v1_15#_user-definable-syntax-highlighting-colors)
-
-### Contributors
-
-This project exists thanks to all the people who contribute.
-[![Contributors](https://opencollective.com/OneDark-Pro/contributors.svg?width=890)](https://github.com/Binaryify/OneDark-Pro/graphs/contributors)
-
-### Backers
-
-<a href="https://opencollective.com/onedark-pro#backers" target="_blank"><img src="https://opencollective.com/onedark-pro/backers.svg?width=890"></a>
-
-### Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
-<a href="https://opencollective.com/onedark-pro#sponsor" target="_blank">
-<img src="https://opencollective.com/onedark-pro/sponsor.svg?width=890">
-</a>
