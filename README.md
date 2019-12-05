@@ -1,52 +1,6 @@
-# [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+# Adventure Code
 
-Atom's iconic One Dark theme, and one of the most installed [themes](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs) for VS Code!
-
-[GitHub repository](https://github.com/Binaryify/OneDark-Pro)
-
-![screenshot](https://i.imgur.com/4xrtS6m.png)
-
-## CHANGELOG
-
-[CHANGELOG.MD](https://github.com/Binaryify/OneDark-Pro/blob/master/CHANGELOG.md)
-
-## SPONSORS
-
-[![codestream](https://alt-images.codestream.com/codestream_logo_onedarkpro.png)](https://codestream.com/?utm_source=vscmarket&utm_medium=banner&utm_campaign=onedarkpro)
-
-Discuss, review, and share code with your team in the VS Code. Links discussions about code to your code. Integrates w/ Slack, Jira, Trello, and Live Share. [Try it free](https://codestream.com/?utm_source=vscmarket&utm_medium=banner&utm_campaign=onedarkpro).
-
-## DOCS & CONTRIBUTE
-
-This document
-([https://binaryify.github.io/OneDark-Pro/](https://binaryify.github.io/OneDark-Pro/))
-includes instructions on how to install and edit the theme.
-
-To help with documentation, first fork and clone this repository.
-
-`cd` to the `OneDark-Pro` folder
-
-Run `yarn`
-
-Then run
-`npm run docs` to serve the documentation
-locally at `localhost:3000`.
-
-## SCREENSHOT
-
-![Screenshot](https://camo.githubusercontent.com/48f39d862900e54913410490e566a9e761bc5ad5/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744e6252776779316676776b7236693139396a33316b7731366f7461742e6a7067)
-
-![Screenshot](https://camo.githubusercontent.com/fde179ff0b0b0f1c87059726a29fcb9115a1f199/68747470733a2f2f7773322e73696e61696d672e636e2f6c617267652f303036744e6252776779316676776b727632726f726a33316b7731366f6468772e6a7067)
-
-![ScreenShot](https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/static/screenshot1.png)
-
-![ScreenShot](https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/static/php.png)
-
-![ScreenShot](https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/static/screenshot2.png)
-
-![ScreenShot](https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/static/js.png)
-
-![ScreenShot](https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/static/cpp.png)
+A sober dark color theme based on the color palette of the popular Cartoon Network show Adventure Time. Based on the 
 
 ### Tweaks & theming
 
