@@ -1,208 +1,44 @@
-# One Dark Pro
+# Adventure Code
 
-## About
-[One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) is based on Atom's default One Dark theme, and is one of the most downloaded themes for VS Code. This document will show you how to install the theme on VS Code, and how to develop and contribute to this project.
-![screenshot](https://ws1.sinaimg.cn/large/006tNbRwgy1fvwjzw3c8fj31kw101adb.jpg)
+A sober dark color theme based on the color palette of the popular Cartoon Network show Adventure Time. Based on the popular Cartoon Network show Adventure Time
 
+### Tweaks & theming
 
-# screenshot
-![Screenshot](https://ws3.sinaimg.cn/large/006tNbRwgy1fvwkr6i199j31kw16otat.jpg)
-
-![Screenshot](https://ws2.sinaimg.cn/large/006tNbRwgy1fvwkrv2rorj31kw16odhw.jpg)
-
-## Install
-Using the Extensions menu, search for **'One Dark Pro'**. Don't forget to apply the theme (see below).
-
-![ScreenShot](https://ws2.sinaimg.cn/large/006tNbRwgy1fvwijszewzj31kw101doj.jpg)
-
-## Apply
-Press `ctrl(⌘) + k`, then press `ctrl(⌘) + t`, you will see a theme selection interface. Choose **'One Dark Pro'**.
-
-![ScreenShot](https://ws1.sinaimg.cn/large/006tNbRwgy1fvwilva97dj31kw101k08.jpg)
-
-## Develop 
-If you see any inconsistencies or missing colors, the following guide will show you how to make your own changes. You can submit your improvements as a merge request to this theme.
-
-Clone this repo
-```
-$ git clone git@github.com:Binaryify/OneDark-Pro.git
-```
-Then run
-
-```
-$ npm install 
-```
-
-Then use vscode open and press `F5` key
-
-Change the `src/themes/syntax.ts` or `src/themes/editorThemes/*` file then reload vscode and you will see the change
-
-You also can use `npm run package` to package extension file, the *.vsic file will be generate, then use vscode install the vsic file
-
-### Principle
-VS Code will parse code and specify a scope for each piece of syntax. For example, the scope may be a keyword, a constant, or punctuation. **'syntax.ts'** includes the settings that tell VS Code how to format the text accordingly, using these scopes.
-
-### Common scope list
-
-```
-comment
-constant
-constant.character.escape
-constant.language
-constant.numeric
-declaration.section entity.name.section
-declaration.tag
-deco.folding
-entity.name.function
-entity.name.tag
-entity.name.type
-entity.other.attribute-name
-entity.other.inherited-class
-invalid
-invalid.deprecated.trailing-whitespace
-keyword
-keyword.control.import
-keyword.operator.js
-markup.heading
-markup.list
-markup.quote
-meta.embedded
-meta.preprocessor
-meta.section entity.name.section
-meta.tag
-storage
-storage.type.method
-string
-string source
-string.unquoted
-support.class
-support.constant
-support.function
-support.type
-support.variable
-text source
-variable
-variable.language
-variable.other
-variable.parameter
-```
-
-### Get code scope
-VS Code comes with a built-in tool to easily obtain the scope of a piece of syntax. 
-
-Press `ctrl(⌘) + shift + P`, then type `dev`, and choose **"Developer: Inspect TM Scopes"** option.
-
-This will show you the selected token's scope. There are four sections:
-
-- the in-scope piece of syntax
-
-- language, token type, etc.
-
-- the theme rule and shows the foreground color of the token
-
-- the list of scopes for the token
-
-![ScreenShot](https://ws1.sinaimg.cn/large/006tNbRwgy1fvwjl9f2igj31kw101jxc.jpg)
-![ScreenShot](https://ws2.sinaimg.cn/large/006tNbRwgy1fvwjlnqha0j31kw1017a3.jpg)
-
-### Add/Change code color
-Now you know the rules for the theme, you simply need the code scope and the hex color you would like. Now edit the **'syntax.ts'** file, add/change code snippet like this:
-
-```js
-{
-      "name": "c++ function",
-      "scope": "meta.function.c",
-      "settings": {
-        "foreground":  colorObj['coral']
-      }
-}
-```
-
-
-### Reload
-Then press `ctrl(⌘) + shift + P`, type **'reload'** and press `enter`. Once the window has reloaded, you will find the color of the code has changed.
-
-![screenshot](https://ws3.sinaimg.cn/large/006tNbRwgy1fvwjm9anuij31kw101aft.jpg)
-
-### Colors config
-
-`color.ts`
-![screenshot](https://ws3.sinaimg.cn/large/006tNbRwgy1fvwjxs1cc0j31kw101n1h.jpg)
+If you want to play around with new colors, use the setting
+`workbench.colorCustomizations` to customize the currently selected theme. For
+example, you can add this snippet in your "settings.json" file:
 
 ```json
-{
-  "classic": {
-    "purple": "#c678dd",
-    "error": "#f44747",
-    "coral": "#e06c75",
-    "whiskey": "#d19a66",
-    "chalky": "#e5c07b",
-    "lightDark": "#7f848e",
-    "dark": "#5c6370",
-    "malibu": "#61afef",
-    "green": "#98c379",
-    "fountainBlue": "#56b6c2",
-    "invalid": "#ffffff"
-  },
-  "vivid": {
-    "purple": "#d55fde",
-    "error": "#f44747",
-    "coral": "#ef596f",
-    "whiskey": "#d19a66",
-    "chalky": "#e5c07b",
-    "lightDark": "#7f848e",
-    "dark": "#5c6370",
-    "malibu": "#61afef",
-    "green": "#89ca78",
-    "fountainBlue": "#2bbac5",
-    "invalid": "#ffffff"
-  }
-}
-
-
-```
-
-## Tweaks & theming
-If you want to play around with new colors, use the setting `workbench.colorCustomizations` to customize the currently selected theme.
-For example, you can add this snippet in your "settings.json" file:
-
-```json
-"workbench.colorCustomizations":{
-    "tab.activeBackground": "#282c34",
-    "activityBar.background": "#282c34",
-    "sideBar.background": "#282c34"
+"workbench.colorCustomizations": {
+  "tab.activeBackground": "#282c34",
+  "activityBar.background": "#282c34",
+  "sideBar.background": "#282c34"
 }
 ```
 
 or use the setting `editor.tokenColorCustomizations`
 
 ```json
-"editor.tokenColorCustomizations":{
-    "[One Dark Pro]": {
-      "textMateRules": [
-        {
-          "scope":["source.python"],
-          "settings": {
-            "foreground": "#e06c75"
-          }
+"editor.tokenColorCustomizations": {
+  "[One Dark Pro]": {
+    "textMateRules": [
+      {
+        "scope": ["source.python"],
+        "settings": {
+          "foreground": "#e06c75"
         }
-      ]
-    }
+      }
+    ]
+  }
 }
 ```
 
 Please check the official documentation,
-[Theme Color Reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference) and 
-[Theme Color](https://code.visualstudio.com/docs/getstarted/themes) , for more helpful information.
+[Theme Color Reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference) and
+[Theme Color](https://code.visualstudio.com/docs/getstarted/themes), for more helpful information.
 
-![setting.json](https://ws4.sinaimg.cn/large/006tNbRwgy1fvwjoqnbtgj31kw101whv.jpg)
+![setting.json](https://camo.githubusercontent.com/e3931303eec6fbfb79c424cd30ca2d50f49c8416/68747470733a2f2f7773342e73696e61696d672e636e2f6c617267652f303036744e6252776779316676776a6f716e6274676a33316b773130317768762e6a7067)
 
-![custom](https://ws3.sinaimg.cn/large/006tNbRwgy1fvwjpwnq7bj30qu14w3zr.jpg)
-
+![custom](https://camo.githubusercontent.com/179963baf6ded2934ec5dba08a65f61ca8d0b34f/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744e6252776779316676776a70776e7137626a33307175313477337a722e6a7067)
 
 [More info](https://code.visualstudio.com/updates/v1_15#_user-definable-syntax-highlighting-colors)
-
-## Contribute
-Now you know how to develop the theme, you can fork this repository and send a pull request with your version. The request will be reviewed, and if successful, merged into this theme and published on the VS Code market.
-
-To publish your own theme, please refer to the official documentation: [https://code.visualstudio.com/docs/extensions/themes-snippets-colorizers](https://code.visualstudio.com/docs/extensions/themes-snippets-colorizers)  
